@@ -228,6 +228,7 @@
   height: 100px;
   text-align: start;
   padding: 0px 20px;
+  opacity: 0;
 }
 .secondpage-header h3 {
   font-size: 60px;
@@ -311,6 +312,7 @@
   width: 100%;
   height: 50px;
   gap: 10px;
+  opacity: 0;
 }
 .social-media-box img {
   height: 50px;
@@ -332,6 +334,7 @@
     position: absolute;
     top: 25vh;
     width: 120px;
+    opacity: 0;
   }
   .secondpage-content-box1 img {
     width: 100%;
@@ -342,10 +345,12 @@
     position: absolute;
     top: 26vh;
     width: 100px;
+    opacity: 0;
   }
   .secondpage-content-box3 {
     top: 33vh;
     left: 2vh;
+    opacity: 0;
   }
   .secondpage-text-content1 h5 {
     font-size: 20px;
@@ -357,6 +362,7 @@
   .secondpage-content-box4 {
     top: 33vh;
     left: 29vh;
+    opacity: 0;
   }
   .secondpage-text-content3 {
     top: 36vh;
@@ -380,14 +386,17 @@
   .secondpage-content-box5 {
     top: 47vh;
     left: 16vh;
+    opacity: 0;
   }
   .secondpage-content-box6 {
     top: 57vh;
     left: 4vh;
+    opacity: 0;
   }
   .secondpage-content-box7 {
     top: 57vh;
     left: 28vh;
+    opacity: 0;
   }
   .secondpage-text-content7 {
     top: 60vh;
@@ -400,6 +409,7 @@
   .secondpage-content-box8 {
     top: 71vh;
     left: 25vh;
+    opacity: 0;
   }
   .secondpage-text-content9 {
     top: 75vh;
@@ -410,6 +420,7 @@
   .secondpage-content-box9 {
     top: 71vh;
     left: 6vh;
+    opacity: 0;
   }
   .secondpage-text-content10 {
     top: 75vh;
@@ -430,10 +441,12 @@
 .thirdpage h1 {
   font-size: 100px;
   color: #f5b410;
+  opacity: 0;
 }
 .thirdpage p {
   font-size: 25px;
   width: 900px;
+  opacity: 0;
 }
 .thirdpage p span {
   font-family: "popins";
@@ -498,6 +511,7 @@
   font-size: 100px;
   color: #f5b410;
   margin-bottom: 120px;
+  opacity: 0;
 }
 .contact-socail-media-main-box {
   display: flex;
@@ -505,6 +519,7 @@
   gap: 10px;
   justify-content: flex-start;
   margin-top: 25px;
+  opacity: 0;
 }
 .contact-socail-media-main-box img {
   height: 50px;

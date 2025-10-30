@@ -69,9 +69,10 @@ function animateFirstPage() {
 // Animation for second page
 function animateSecondPage() {
   if (isMobile()) {
-    // Mobile animation - fade in boxes one by one
-    const mobileBoxes = [
+    // Mobile animation - fade in boxes and text one by one
+    const mobileElements = [
       ".secondpage-content-box1",
+      ".secondpage-text-content1",
       ".secondpage-content-box2",
       ".secondpage-content-box3",
       ".secondpage-text-content2",
@@ -92,25 +93,26 @@ function animateSecondPage() {
       ".social-media-box",
     ];
 
-    mobileBoxes.forEach((box, index) => {
+    mobileElements.forEach((element, index) => {
       gsap.fromTo(
-        box,
-        { opacity: 0, y: 20 },
+        element,
+        { opacity: 0, scale: 0.8 },
         {
           opacity: 1,
-          y: 0,
-          duration: 0.8,
-          delay: index * 0.1,
-          ease: "power2.out",
+          scale: 1,
+          duration: 0.6,
+          delay: index * 0.15,
+          ease: "back.out(1.7)",
           scrollTrigger: {
             trigger: ".secondpage",
-            start: "top 80%",
-            toggleActions: "play none none reverse",
+            start: "top 70%",
+            once: true,
           },
         }
       );
     });
   } else {
+    // Desktop animation - header
     gsap.fromTo(
       ".secondpage-header",
       { opacity: 0, y: -50 },
@@ -121,12 +123,13 @@ function animateSecondPage() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".secondpage",
-          start: "top 80%",
-          toggleActions: "play none none reverse",
+          start: "top 70%",
+          once: true,
         },
       }
     );
 
+    // Desktop - text elements with scale animation and more delay
     const textElements = [
       ".secondpage-text-content1",
       ".secondpage-text-content2",
@@ -144,22 +147,23 @@ function animateSecondPage() {
     textElements.forEach((element, index) => {
       gsap.fromTo(
         element,
-        { opacity: 0, y: 30 },
+        { opacity: 0, scale: 0.5 },
         {
           opacity: 1,
-          y: 0,
+          scale: 1,
           duration: 0.8,
-          delay: index * 0.1,
-          ease: "power2.out",
+          delay: 0.5 + index * 0.2,
+          ease: "back.out(1.7)",
           scrollTrigger: {
             trigger: ".secondpage",
-            start: "top 60%",
-            toggleActions: "play none none reverse",
+            start: "top 50%",
+            once: true,
           },
         }
       );
     });
 
+    // Social media box animation
     gsap.fromTo(
       ".social-media-box",
       { opacity: 0, x: 50 },
@@ -167,11 +171,12 @@ function animateSecondPage() {
         opacity: 1,
         x: 0,
         duration: 1,
+        delay: 0.5,
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".secondpage",
-          start: "bottom 80%",
-          toggleActions: "play none none reverse",
+          start: "top 50%",
+          once: true,
         },
       }
     );
@@ -191,7 +196,7 @@ function animateThirdPage() {
       scrollTrigger: {
         trigger: ".thirdpage",
         start: "top 80%",
-        toggleActions: "play none none reverse",
+        once: true,
       },
     }
   );
@@ -208,7 +213,7 @@ function animateThirdPage() {
       scrollTrigger: {
         trigger: ".thirdpage",
         start: "top 70%",
-        toggleActions: "play none none reverse",
+        once: true,
       },
     }
   );
@@ -227,7 +232,7 @@ function animateContactSection() {
       scrollTrigger: {
         trigger: ".contact-section",
         start: "top 80%",
-        toggleActions: "play none none reverse",
+        once: true,
       },
     }
   );
@@ -252,7 +257,7 @@ function animateContactSection() {
         scrollTrigger: {
           trigger: ".contact-section",
           start: "top 60%",
-          toggleActions: "play none none reverse",
+          once: true,
         },
       }
     );
