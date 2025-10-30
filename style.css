@@ -17,7 +17,7 @@
   transform: translateY(20px);
 }
 
-/* First page - Fixed background */
+/* First page - Sticky */
 .firstpage {
   height: 100vh;
   width: 100%;
@@ -25,10 +25,8 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
   z-index: 1;
 }
 
@@ -50,8 +48,8 @@
   position: absolute;
   height: 100px;
   width: 100px;
-  top: 5vh;
-  right: 46vh;
+  top: 4vh;
+  right: 45vh;
 }
 .blue-box1,
 .blue-box2 {
@@ -61,7 +59,7 @@
   position: absolute;
   height: 100px;
   width: 100px;
-  top: 20vh;
+  top: 17vh;
   right: 23vh;
 }
 .content-box2 p {
@@ -90,25 +88,12 @@
   transform: translate(-50%, -50%);
 }
 
-/* Scroll container - holds all scrolling sections */
-.scroll-container {
-  position: relative;
-  z-index: 2;
-  margin-top: 100vh;
-}
-
 @media (max-width: 500px) {
   .firstpage {
     background-color: white;
     background-image: none;
-    background-attachment: scroll;
     position: relative;
     height: 100vh;
-    margin-top: 0;
-  }
-
-  .scroll-container {
-    margin-top: 0;
   }
 
   .firstpage-header {
@@ -219,21 +204,23 @@
   }
 }
 
-/* Second page */
+/* Second page - Sticky */
 .secondpage {
   background: url(imgs/secondpage.JPG);
   background-repeat: no-repeat;
+  overflow: hidden;
   background-position: center;
   background-size: cover;
-  overflow: hidden;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  position: relative;
+  position: sticky;
+  top: 0;
   width: 100%;
   padding: 50px 0px 0px 0px;
+  z-index: 2;
 }
 
 .secondpage-header {
@@ -255,11 +242,12 @@
 }
 .secondpage-text-content2 {
   position: absolute;
-  top: 69vh;
-  left: 85vh;
+  top: 63vh;
+  left: 82vh;
 }
 .secondpage-text-content1 h5 {
   font-size: 28px;
+  width: 100px;
 }
 .secondpage-text-content3 {
   position: absolute;
@@ -269,13 +257,13 @@
 }
 .secondpage-text-content4 {
   position: absolute;
-  top: 77vh;
+  top: 72vh;
   left: 107vh;
   color: #f5b410;
 }
 .secondpage-text-content5 {
   position: absolute;
-  top: 44vh;
+  top: 35vh;
   left: 128vh;
   color: #111111;
 }
@@ -336,6 +324,7 @@
   .secondpage {
     background-color: white;
     background-image: none;
+    position: relative;
   }
   .secondpage-content-box1 {
     height: 120px;
@@ -429,10 +418,14 @@
   }
 }
 
-/* Third page */
+/* Third page - Sticky */
 .thirdpage {
   padding: 50px;
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  min-height: 100vh;
 }
 .thirdpage h1 {
   font-size: 100px;
@@ -463,6 +456,7 @@
   .thirdpage {
     padding: 30px 20px;
     height: auto;
+    position: relative;
   }
   .thirdpage h1 {
     font-size: 45px;
@@ -476,6 +470,7 @@
 @media screen and (max-width: 480px) {
   .thirdpage {
     padding: 20px 15px;
+    position: relative;
   }
   .thirdpage h1 {
     font-size: 35px;
@@ -486,7 +481,7 @@
   }
 }
 
-/* Contact section */
+/* Contact section - Normal scroll (top layer) */
 .contact-section {
   height: 100vh;
   width: 100%;
@@ -496,6 +491,8 @@
   background-repeat: no-repeat;
   padding: 50px;
   text-align: start;
+  position: relative;
+  z-index: 4;
 }
 .contact-section h1 {
   font-size: 100px;
