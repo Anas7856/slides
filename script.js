@@ -40,7 +40,6 @@ function animateFirstPage() {
       );
     });
   } else {
-    // Desktop animation
     gsap.fromTo(
       ".firstpage-header",
       { opacity: 0, y: -50 },
@@ -112,7 +111,6 @@ function animateSecondPage() {
       );
     });
   } else {
-    // Desktop animation
     gsap.fromTo(
       ".secondpage-header",
       { opacity: 0, y: -50 },

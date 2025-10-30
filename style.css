@@ -5,7 +5,7 @@
   font-family: "cocomont", sans-serif;
 }
 @font-face {
-  font-family: "cocomont"; /* You can name this anything */
+  font-family: "cocomont";
   src: url("imgs/Cocomat\ Light-trial.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -17,20 +17,23 @@
   transform: translateY(20px);
 }
 
+/* First page - Fixed background */
 .firstpage {
-  height: 114vh;
-  overflow: hidden;
+  height: 100vh;
   width: 100%;
   background: url("imgs/bg2.JPG");
   background-position: center;
-
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
+
 .firstpage-header {
   height: 150px;
-  /* background-color: black; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -47,11 +50,8 @@
   position: absolute;
   height: 100px;
   width: 100px;
-  top: 8vh;
-  right: 45vh;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
+  top: 5vh;
+  right: 46vh;
 }
 .blue-box1,
 .blue-box2 {
@@ -61,11 +61,8 @@
   position: absolute;
   height: 100px;
   width: 100px;
-  top: 24vh;
-  right: 22vh;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
+  top: 20vh;
+  right: 23vh;
 }
 .content-box2 p {
   font-size: 29px;
@@ -92,12 +89,28 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Scroll container - holds all scrolling sections */
+.scroll-container {
+  position: relative;
+  z-index: 2;
+  margin-top: 100vh;
+}
+
 @media (max-width: 500px) {
   .firstpage {
     background-color: white;
     background-image: none;
+    background-attachment: scroll;
+    position: relative;
     height: 100vh;
+    margin-top: 0;
   }
+
+  .scroll-container {
+    margin-top: 0;
+  }
+
   .firstpage-header {
     display: flex;
     align-items: center;
@@ -146,7 +159,6 @@
   .content-box1 {
     left: 1vh;
     top: 20vh;
-
     position: absolute;
   }
 
@@ -206,24 +218,24 @@
     top: 84vh;
   }
 }
-/* first page ends */
-/* secondpage */
+
+/* Second page */
 .secondpage {
   background: url(imgs/secondpage.JPG);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  overflow: hidden;
   height: 100vh;
   display: flex;
   align-items: center;
-  overflow: hidden;
-
   justify-content: space-between;
   flex-direction: column;
   position: relative;
   width: 100%;
   padding: 50px 0px 0px 0px;
-  background-size: cover;
 }
+
 .secondpage-header {
   width: 100%;
   height: 100px;
@@ -309,7 +321,6 @@
   justify-content: flex-end;
   padding: 0px 20px;
   width: 100%;
-  /* background-color: black; */
   height: 50px;
   gap: 10px;
 }
@@ -320,6 +331,7 @@
 .secondpage-content-box1 {
   display: none;
 }
+
 @media (max-width: 500px) {
   .secondpage {
     background-color: white;
@@ -416,9 +428,11 @@
     z-index: 999;
   }
 }
-/* thirdpage */
+
+/* Third page */
 .thirdpage {
   padding: 50px;
+  background-color: white;
 }
 .thirdpage h1 {
   font-size: 100px;
@@ -431,56 +445,48 @@
 .thirdpage p span {
   font-family: "popins";
 }
-/* Tablet Responsive - iPad and similar devices */
+
 @media screen and (max-width: 1024px) {
   .thirdpage {
     padding: 40px;
   }
-
   .thirdpage h1 {
     font-size: 70px;
   }
-
   .thirdpage p {
     font-size: 20px;
     width: 85%;
   }
 }
 
-/* Mobile Responsive - Phones */
 @media screen and (max-width: 768px) {
   .thirdpage {
     padding: 30px 20px;
     height: auto;
-    /* min-height: 100vh; */
   }
-
   .thirdpage h1 {
     font-size: 45px;
   }
-
   .thirdpage p {
     font-size: 16px;
     width: 100%;
   }
 }
 
-/* Extra small mobile devices */
 @media screen and (max-width: 480px) {
   .thirdpage {
     padding: 20px 15px;
   }
-
   .thirdpage h1 {
     font-size: 35px;
   }
-
   .thirdpage p {
     font-size: 14px;
     width: 100%;
   }
 }
-/* contact-section */
+
+/* Contact section */
 .contact-section {
   height: 100vh;
   width: 100%;
@@ -513,77 +519,62 @@
   margin-bottom: 0;
 }
 
-/* Tablet Responsive - iPad and similar devices */
 @media screen and (max-width: 1024px) {
   .contact-section {
     padding: 40px;
   }
-
   .contact-section h1 {
     font-size: 70px;
     margin-bottom: 80px;
   }
-
   .contact-socail-media-main-box {
     margin-top: 20px;
   }
-
   .contact-socail-media-main-box img {
     height: 45px;
   }
-
   .contact-socail-media-main-box h5 {
     font-size: 18px;
   }
 }
 
-/* Mobile Responsive - Phones */
 @media screen and (max-width: 768px) {
   .contact-section {
     padding: 30px 20px;
     height: auto;
     min-height: 100vh;
   }
-
   .contact-section h1 {
     font-size: 45px;
     margin-bottom: 50px;
   }
-
   .contact-socail-media-main-box {
     margin-top: 18px;
     gap: 8px;
   }
-
   .contact-socail-media-main-box img {
     height: 40px;
   }
-
   .contact-socail-media-main-box h5 {
     font-size: 16px;
   }
 }
 
-/* Extra small mobile devices */
 @media screen and (max-width: 480px) {
   .contact-section {
     padding: 20px 15px;
   }
-
   .contact-section h1 {
     font-size: 35px;
     margin-bottom: 40px;
   }
-
   .contact-socail-media-main-box {
     margin-top: 15px;
     gap: 6px;
   }
-
   .contact-socail-media-main-box img {
     height: 35px;
   }
-
   .contact-socail-media-main-box h5 {
     font-size: 14px;
   }
