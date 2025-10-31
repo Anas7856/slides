@@ -71,6 +71,7 @@ function animateSecondPage() {
   if (isMobile()) {
     // Mobile animation - fade in boxes and text one by one
     const mobileElements = [
+      ".secondpage-header",
       ".secondpage-content-box1",
       ".secondpage-text-content1",
       ".secondpage-content-box2",
@@ -90,6 +91,7 @@ function animateSecondPage() {
       ".secondpage-text-content9",
       ".secondpage-content-box9",
       ".secondpage-text-content10",
+      ".secondpage-text-content11",
       ".social-media-box",
     ];
 
@@ -101,13 +103,13 @@ function animateSecondPage() {
           opacity: 1,
           scale: 1,
           duration: 0.6,
-          delay: index * 0.15,
           ease: "back.out(1.7)",
           scrollTrigger: {
             trigger: ".secondpage",
-            start: "top 70%",
+            start: "top 80%",
             once: true,
           },
+          delay: index * 0.08,
         }
       );
     });
@@ -123,13 +125,13 @@ function animateSecondPage() {
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".secondpage",
-          start: "top 70%",
+          start: "top 80%",
           once: true,
         },
       }
     );
 
-    // Desktop - text elements with scale animation and more delay
+    // Desktop - text elements with scale animation
     const textElements = [
       ".secondpage-text-content1",
       ".secondpage-text-content2",
@@ -147,18 +149,17 @@ function animateSecondPage() {
     textElements.forEach((element, index) => {
       gsap.fromTo(
         element,
-        { opacity: 0, scale: 0.5 },
+        { opacity: 0 },
         {
           opacity: 1,
-          scale: 1,
-          duration: 0.8,
-          delay: 0.5 + index * 0.2,
+          duration: 2,
           ease: "back.out(1.7)",
           scrollTrigger: {
             trigger: ".secondpage",
-            start: "top 50%",
+            start: "top 70%",
             once: true,
           },
+          delay: 1,
         }
       );
     });
@@ -171,13 +172,13 @@ function animateSecondPage() {
         opacity: 1,
         x: 0,
         duration: 1,
-        delay: 0.5,
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".secondpage",
-          start: "top 50%",
+          start: "top 70%",
           once: true,
         },
+        delay: 0.5,
       }
     );
   }
@@ -208,13 +209,13 @@ function animateThirdPage() {
       opacity: 1,
       y: 0,
       duration: 1.2,
-      delay: 0.3,
       ease: "power2.out",
       scrollTrigger: {
         trigger: ".thirdpage",
         start: "top 70%",
         once: true,
       },
+      delay: 0.3,
     }
   );
 }
@@ -252,13 +253,13 @@ function animateContactSection() {
         opacity: 1,
         x: 0,
         duration: 0.8,
-        delay: index * 0.2,
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".contact-section",
           start: "top 60%",
           once: true,
         },
+        delay: index * 0.2,
       }
     );
   });

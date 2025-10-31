@@ -37,6 +37,7 @@
   align-items: center;
   justify-content: space-between;
   padding-right: 280px;
+  opacity: 0;
 }
 .firstpage-header img {
   height: 300px;
@@ -50,6 +51,7 @@
   width: 100px;
   top: 4vh;
   right: 45vh;
+  opacity: 0;
 }
 .blue-box1,
 .blue-box2 {
@@ -61,6 +63,7 @@
   width: 100px;
   top: 17vh;
   right: 23vh;
+  opacity: 0;
 }
 .content-box2 p {
   font-size: 29px;
@@ -86,6 +89,7 @@
   text-align: center;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 @media (max-width: 500px) {
@@ -137,6 +141,7 @@
     height: 100px;
     width: 100px;
     display: block;
+    opacity: 0;
   }
   .blue-box1 img {
     width: 100%;
@@ -158,6 +163,7 @@
     height: 100px;
     width: 100px;
     display: block;
+    opacity: 0;
   }
   .blue-box2 img {
     width: 100%;
@@ -238,16 +244,17 @@
 }
 .secondpage-text-content1 {
   position: absolute;
-  top: 44vh;
-  left: 82vh;
+  top: 45vh;
+  left: 83vh;
+  opacity: 0;
 }
 .secondpage-text-content2 {
   position: absolute;
-  top: 63vh;
-  left: 82vh;
+  top: 70vh;
+  left: 85vh;
 }
 .secondpage-text-content1 h5 {
-  font-size: 28px;
+  font-size: 24px;
   width: 100px;
 }
 .secondpage-text-content3 {
@@ -258,18 +265,18 @@
 }
 .secondpage-text-content4 {
   position: absolute;
-  top: 72vh;
+  top: 75vh;
   left: 107vh;
   color: #f5b410;
 }
 .secondpage-text-content5 {
   position: absolute;
-  top: 35vh;
+  top: 43vh;
   left: 128vh;
   color: #111111;
 }
 .secondpage-text-content5 h5 {
-  font-size: 24px !important;
+  font-size: 22px !important;
 }
 .secondpage-text-content6 {
   position: absolute;
@@ -426,6 +433,9 @@
     top: 75vh;
     left: 8vh;
     z-index: 999;
+  }
+  .secondpage-text-content11 {
+    opacity: 0;
   }
 }
 
