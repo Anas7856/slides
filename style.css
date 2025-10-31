@@ -55,6 +55,7 @@
   right: 45vh;
   opacity: 0;
 }
+
 .blue-box1,
 .blue-box2 {
   display: none;
@@ -70,10 +71,18 @@
 .content-box2 a {
   font-size: 29px;
   font-weight: 400;
+  transition: 0.3s ease-in-out;
   line-height: 30px;
+
   color: #f5b410;
   text-decoration: none;
   text-align: center;
+}
+.content-box1 a:hover {
+  font-weight: 900;
+}
+.content-box2 a:hover {
+  font-weight: 900;
 }
 .content-box1 a {
   color: black;
@@ -105,10 +114,6 @@
     position: sticky;
     top: 0;
     height: 100vh;
-  }
-  .hover-img {
-    opacity: 0;
-    width: 100%;
   }
 
   .firstpage-header {
@@ -149,8 +154,6 @@
   .content-box2 a {
     font-size: 19px;
   }
-
-  /* Blue box hover fix */
   .blue-box1 {
     top: 17vh;
     left: 1vh;
@@ -158,32 +161,24 @@
     height: 100px;
     width: 100px;
     display: block;
-    opacity: 1;
-    pointer-events: auto; /* enable hover/tap */
-  }
-
-  .blue-box1 img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  /* Hide yellow stroke initially */
-  .blue-box1 .hover-img {
     opacity: 0;
   }
-
-  /* When hovering, swap visibility */
-  .blue-box1:hover .hover-img {
-    opacity: 1 !important;
+  .blue-box1:hover img {
+    display: none !important;
   }
-  .blue-box1:hover .hover-img1 {
-    opacity: 0 !important;
+  .blue-box1:hover .blue-box12 {
+    display: block !important;
   }
-
-  /* Keep pointer events disabled for others */
+  .blue-box12 {
+    top: 17vh;
+    left: 1vh;
+    display: none;
+    position: absolute;
+  }
+  .hover-img {
+    width: 100%;
+  }
+  .blue-box1,
   .blue-box2,
   .blue-box3,
   .blue-box4,
@@ -196,6 +191,9 @@
     pointer-events: none !important;
   }
 
+  .blue-box1 img {
+    width: 100%;
+  }
   .content-box1 {
     left: 4vh;
     z-index: 99999 !important;
@@ -312,19 +310,19 @@
 .secondpage-text-content3 {
   position: absolute;
   top: 33vh;
-  left: 105vh;
+  left: 110vh;
   color: #f5b410;
 }
 .secondpage-text-content4 {
   position: absolute;
   top: 75vh;
-  left: 107vh;
+  left: 110vh;
   color: #f5b410;
 }
 .secondpage-text-content5 {
   position: absolute;
   top: 43vh;
-  left: 128vh;
+  left: 130vh;
   color: #111111;
 }
 .secondpage-text-content5 h5 {
@@ -333,7 +331,7 @@
 .secondpage-text-content6 {
   position: absolute;
   top: 63vh;
-  left: 130vh;
+  left: 134vh;
 }
 .secondpage-text-content7 {
   position: absolute;
@@ -348,13 +346,13 @@
 .secondpage-text-content9 {
   position: absolute;
   top: 17vh;
-  left: 174vh;
+  left: 179vh;
   color: white;
 }
 .secondpage-text-content10 {
   position: absolute;
   top: 44vh;
-  left: 174vh;
+  left: 179vh;
   color: white;
 }
 .secondpage-text-content11 {
@@ -440,7 +438,7 @@
     font-size: 16px;
   }
   .secondpage-text-content5 {
-    top: 46vh;
+    top: 45vh;
     left: 19vh;
   }
   .secondpage-text-content5 h5 {
@@ -466,11 +464,11 @@
     opacity: 0;
   }
   .secondpage-text-content7 {
-    top: 35vh;
+    top: 34vh;
     left: 34vh;
   }
   .secondpage-text-content8 {
-    top: 55vh;
+    top: 53vh;
     left: 5vh;
   }
   .secondpage-content-box8 {
@@ -496,6 +494,9 @@
   }
   .secondpage-text-content11 {
     opacity: 0;
+  }
+  .social-media-box {
+    padding-bottom: 45px;
   }
 }
 
