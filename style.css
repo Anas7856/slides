@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "cocomont", sans-serif;
+  scroll-behavior: smooth;
 }
 @font-face {
   font-family: "cocomont";
