@@ -141,6 +141,7 @@
   .content-box2 {
     top: 27vh !important;
     left: 15vh;
+    z-index: 99999 !important;
   }
   .content-box2 a {
     font-size: 19px;
@@ -154,17 +155,32 @@
     display: block;
     opacity: 0;
   }
+  .blue-box1,
+  .blue-box2,
+  .blue-box3,
+  .blue-box4,
+  .blue-box5,
+  .blue-box6,
+  .blue-box7,
+  .blue-box8,
+  .blue-box9,
+  .blue-box10 {
+    pointer-events: none !important;
+  }
+
   .blue-box1 img {
     width: 100%;
   }
   .content-box1 {
     left: 4vh;
+    z-index: 99999 !important;
     top: 20vh;
     position: absolute;
   }
 
   .content-box1 a {
     font-size: 19px;
+    z-index: 9999;
     line-height: 20px;
   }
   .blue-box2 {
