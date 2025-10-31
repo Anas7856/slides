@@ -287,8 +287,8 @@
   opacity: 0;
 }
 .secondpage-header h3 {
-  font-size: 60px;
-  font-weight: 400;
+  font-size: 100px;
+  font-weight: 600;
   line-height: 70px;
   color: #f5b410;
 }
@@ -380,6 +380,10 @@
 }
 
 @media (max-width: 500px) {
+  .secondpage-header h3 {
+    font-size: 35px;
+    font-weight: 600;
+  }
   .secondpage {
     background-color: white;
     background-image: none;
