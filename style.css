@@ -51,7 +51,7 @@
   position: absolute;
   height: 100px;
   width: 100px;
-  top: 4vh;
+  top: 2vh;
   right: 45vh;
   opacity: 0;
 }
@@ -275,7 +275,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  padding: 50px 0px 0px 0px;
+  padding: 50px 0px 30px 0px;
   z-index: 2;
 }
 
