@@ -96,7 +96,8 @@
   .firstpage {
     background-color: white;
     background-image: none;
-    position: relative;
+    position: sticky;
+    top: 0;
     height: 100vh;
   }
 
@@ -333,7 +334,8 @@
   .secondpage {
     background-color: white;
     background-image: none;
-    position: relative;
+    position: sticky;
+    top: 0;
   }
   .secondpage-content-box1 {
     height: 120px;
@@ -368,16 +370,16 @@
   }
   .secondpage-content-box4 {
     top: 33vh;
-    left: 29vh;
+    left: 39vh;
     opacity: 0;
   }
   .secondpage-text-content3 {
     top: 36vh;
-    left: 32vh;
+    left: 42vh;
   }
   .secondpage-text-content4 {
     top: 39vh;
-    left: 19vh;
+    left: 23vh;
   }
   .secondpage-text-content5 {
     top: 50vh;
@@ -388,11 +390,11 @@
   }
   .secondpage-text-content6 {
     top: 50vh;
-    left: 33vh;
+    left: 40vh;
   }
   .secondpage-content-box5 {
-    top: 47vh;
-    left: 16vh;
+    top: 50vh;
+    left: 21vh;
     opacity: 0;
   }
   .secondpage-content-box6 {
@@ -402,12 +404,12 @@
   }
   .secondpage-content-box7 {
     top: 57vh;
-    left: 28vh;
+    left: 38vh;
     opacity: 0;
   }
   .secondpage-text-content7 {
     top: 60vh;
-    left: 31vh;
+    left: 41vh;
   }
   .secondpage-text-content8 {
     top: 61vh;
@@ -415,12 +417,12 @@
   }
   .secondpage-content-box8 {
     top: 71vh;
-    left: 25vh;
+    left: 35vh;
     opacity: 0;
   }
   .secondpage-text-content9 {
     top: 75vh;
-    left: 27vh;
+    left: 37vh;
     color: rgb(255, 255, 255);
     z-index: 99;
   }
@@ -478,8 +480,9 @@
 @media screen and (max-width: 768px) {
   .thirdpage {
     padding: 30px 20px;
-    height: auto;
-    position: relative;
+    height: 50vh;
+    position: sticky;
+    top: 0;
   }
   .thirdpage h1 {
     font-size: 45px;
@@ -493,7 +496,8 @@
 @media screen and (max-width: 480px) {
   .thirdpage {
     padding: 20px 15px;
-    position: relative;
+    position: sticky;
+    top: 0;
   }
   .thirdpage h1 {
     font-size: 35px;
