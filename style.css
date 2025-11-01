@@ -107,6 +107,12 @@
   opacity: 0;
 }
 
+@media (max-width: 1210px) {
+  .content-box1 {
+    top: 10vh;
+    left: 20vh;
+  }
+}
 @media (max-width: 500px) {
   .firstpage {
     background-color: white;
