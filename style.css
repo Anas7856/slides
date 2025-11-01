@@ -112,6 +112,10 @@
     top: 10vh;
     right: 32vh;
   }
+  .content-box2 {
+    top: 20vh;
+    right: 24vh;
+  }
 }
 @media (max-width: 500px) {
   .firstpage {
