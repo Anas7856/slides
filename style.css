@@ -234,12 +234,12 @@
 }
 @media (max-height: 700px) {
   .content-box1 {
-    top: 8%;
-    right: 18%;
+    top: 5%;
+    right: 20%;
   }
   .content-box2 {
-    top: 22%;
-    right: 6%;
+    top: 20%;
+    right: 10%;
   }
 }
 @media (max-height: 530px) {
@@ -769,7 +769,7 @@
 }
 
 /* Tablet Screens (768px to 1023px) */
-@media (min-width: 768px) and (max-width: 1030px) {
+@media (min-width: 768px) and (max-width: 1028px) {
   .secondpage-header h3 {
     font-size: 70px;
     line-height: 55px;
@@ -860,12 +860,12 @@
     left: 72%;
   }
   .secondpage-text-content9 {
-    top: 23%;
-    left: 87%;
+    top: 20%;
+    left: 84%;
   }
   .secondpage-text-content10 {
     top: 45%;
-    left: 87%;
+    left: 84%;
   }
 }
 @media (max-height: 600px) {
