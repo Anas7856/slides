@@ -24,7 +24,8 @@
   width: 100%;
   background: url("imgs/bg2.JPG");
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   position: sticky;
   overflow: hidden;
@@ -53,7 +54,7 @@
   position: absolute;
   height: 100px;
   width: 100px;
-  top: 8%;
+  top: 10% !important;
   right: 20%;
   opacity: 0;
 }
@@ -67,7 +68,7 @@
   position: absolute;
   height: 100px;
   width: 100px;
-  top: 18%;
+  top: 23% !important;
   right: 10%;
   opacity: 0;
 }
@@ -172,7 +173,7 @@
 /* Medium Screens (1024px to 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
   .content-box1 {
-    top: 4%;
+    top: 5.5% !important;
     right: 20%;
   }
 
@@ -448,7 +449,7 @@
   background-repeat: no-repeat;
   overflow: hidden;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -485,8 +486,8 @@
 
 .secondpage-text-content2 {
   position: absolute;
-  top: 70%;
-  left: 44%;
+  top: 66% !important;
+  left: 39%;
 }
 
 .secondpage-text-content1 h5 {
@@ -496,8 +497,8 @@
 
 .secondpage-text-content3 {
   position: absolute;
-  top: 33%;
-  left: 57%;
+  top: 33% !important;
+  left: 53% !important;
   color: #f5b410;
 }
 
@@ -521,25 +522,24 @@
 
 .secondpage-text-content6 {
   position: absolute;
-  top: 63%;
+  top: 66% !important;
   left: 70%;
 }
 
 .secondpage-text-content7 {
   position: absolute;
-  top: 27%;
-  left: 82%;
+  top: 31% !important;
 }
 
 .secondpage-text-content8 {
   position: absolute;
-  top: 7%;
-  left: 79%;
+  top: 10% !important;
+  left: 74.5% !important;
 }
 
 .secondpage-text-content9 {
   position: absolute;
-  top: 17%;
+  top: 22% !important;
   left: 93%;
   color: white;
 }
@@ -553,8 +553,8 @@
 
 .secondpage-text-content11 {
   position: absolute;
-  top: 76%;
-  left: 79%;
+  top: 77% !important;
+  left: 74% !important;
   color: rgb(0, 0, 0);
 }
 
@@ -576,6 +576,11 @@
 
 .secondpage-content-box1 {
   display: none;
+}
+
+/* second page boxes */
+.secondpage-text-contentOne {
+  left: 41% !important;
 }
 
 /* Extra Large Screens (1920px and above) */
