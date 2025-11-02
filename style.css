@@ -173,13 +173,13 @@
 /* Medium Screens (1024px to 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
   .content-box1 {
-    top: 5.5% !important;
-    right: 18.5% !important;
+    top: 6% !important;
+    right: 20.5% !important;
   }
 
   .content-box2 {
-    top: 20% !important;
-    right: 9%;
+    top: 20.5% !important;
+    right: 10.5% !important;
   }
 
   .firstpage-header {
@@ -749,21 +749,21 @@
     left: 40%;
   }
   .secondpage-text-contentOne {
-    top: 45% !important;
-    left: 39.5% !important;
+    top: 44.5% !important;
+    left: 40.1% !important;
   }
   .secondpage-text-content1 h5 {
     font-size: 20px;
   }
 
   .secondpage-text-content2 {
-    top: 67% !important;
-    left: 39% !important;
+    top: 65% !important;
+    left: 40.6% !important;
   }
 
   .secondpage-text-content3 {
     top: 33% !important;
-    left: 51% !important;
+    left: 50.5% !important;
   }
 
   .secondpage-text-content4 {
@@ -1287,7 +1287,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 50px;
+  padding: 50px 50px 120px 50px;
   text-align: start;
   position: relative;
   z-index: 4;
@@ -1295,7 +1295,7 @@
 .contact-section h1 {
   font-size: 100px;
   color: #f5b410;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
   opacity: 0;
 }
 .contact-socail-media-main-box {
