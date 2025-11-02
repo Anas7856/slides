@@ -202,15 +202,15 @@
 }
 
 /* Tablet Screens (768px to 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1026px) {
   .content-box1 {
-    top: 0%;
-    right: 18%;
+    top: 10%;
+    right: 16%;
   }
 
   .content-box2 {
-    top: 17%;
-    right: 8%;
+    top: 23%;
+    right: 5%;
   }
 
   .firstpage-header {
@@ -750,15 +750,15 @@
 }
 
 /* Tablet Screens (768px to 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1026px) {
   .secondpage-header h3 {
     font-size: 70px;
     line-height: 55px;
   }
 
   .secondpage-text-content1 {
-    top: 45%;
-    left: 40%;
+    top: 47%;
+    left: 37%;
   }
 
   .secondpage-text-content1 h5 {
@@ -766,22 +766,22 @@
   }
 
   .secondpage-text-content2 {
-    top: 66%;
-    left: 41%;
+    top: 68%;
+    left: 37%;
   }
 
   .secondpage-text-content3 {
-    top: 33%;
-    left: 53%;
+    top: 35%;
+    left: 51%;
   }
 
   .secondpage-text-content4 {
-    top: 72%;
-    left: 53%;
+    top: 73%;
+    left: 51%;
   }
 
   .secondpage-text-content5 {
-    top: 43%;
+    top: 44%;
     left: 63%;
   }
 
@@ -790,28 +790,28 @@
   }
 
   .secondpage-text-content6 {
-    top: 62%;
-    left: 66%;
+    top: 65%;
+    left: 64%;
   }
 
   .secondpage-text-content7 {
-    top: 29%;
+    top: 32%;
     left: 76%;
   }
 
   .secondpage-text-content8 {
-    top: 10%;
-    left: 74%;
+    top: 13%;
+    left: 76%;
   }
 
   .secondpage-text-content9 {
-    top: 20%;
-    left: 87%;
+    top: 24%;
+    left: 89%;
   }
 
   .secondpage-text-content10 {
-    top: 44%;
-    left: 87%;
+    top: 45%;
+    left: 89%;
   }
 
   .secondpage-text-content11 {
